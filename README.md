@@ -6,7 +6,7 @@ This repository contains programs from the IP Lab in Semester VII, UVCE.
 
 Install apache server and php
 
-`sudo apt isntall php apache2`
+`sudo apt install php apache2`
 
 Clone the repository to `/var/www/html`
 

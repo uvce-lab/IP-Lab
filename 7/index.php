@@ -62,7 +62,7 @@
     <h2>Book database</h2>
     <table>
         <tr><?php showColumns("books", "SHOW COLUMNS FROM `book`;", 1);?></tr>
-        <?php showDetails("books", "SELECT * FROM `book`;", 3);?>
+        <?php showDetails("books", "SELECT * FROM `book`;", 5);?>
     </table>
 </body>
 </html>

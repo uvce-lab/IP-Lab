@@ -40,11 +40,7 @@
             </tr>
             <?php 
                 foreach($users as $u)
-                {
-                    echo "<tr><td>$u->Id</td>";
-                    echo "<td>$u->UserName</td>";
-                    echo "<td>$u->Age</td></tr>";
-                }
+                    echo "<tr><td>$u->Id</td><td>$u->UserName</td><td>$u->Age</td></tr>";
             ?>
         </table>
     </body>

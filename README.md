@@ -16,6 +16,8 @@ Navigate to `localhost/ip-lab` to view the files
 
 ## Install Instructions for Windows (with XAMPP)
 
+Add PowerShell to the System Environmental Path
+
 Install Xampp to its default location (`C:\xampp`)
 
 Delete contents of `C:\xampp\htdocs\`

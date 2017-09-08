@@ -17,8 +17,8 @@
         $_REQUEST['pub']);
     
     $servername = 'localhost';
-    $username = trim(`cat ../secrets/username`);
-    $password = trim(`cat ../secrets/password`);
+    $username = trim(`type ..\secrets\username`);
+    $password = trim(`type ..\secrets\password`);
     $conn = new mysqli($servername, $username, $password, 'books');
 
     if($conn->connect_error) die("Connection error: ". $conn->connect_error);

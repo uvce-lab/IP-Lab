@@ -2,8 +2,8 @@
     function getConnection($db)
     {
         $servername = 'localhost';
-        $username = trim(`cat ../secrets/username`);
-        $password = trim(`cat ../secrets/password`);
+        $username = trim(`type ..\secrets\username`);
+        $password = trim(`type ..\secrets\password`);
 
         if ($db) $conn = new mysqli($servername, $username, $password, $db);
         else $conn = new mysqli($servername, $username, $password);

@@ -12,8 +12,8 @@
     $user = new User($_REQUEST['userName'], $_REQUEST['age']);
     
     $servername = 'localhost';
-    $username = trim(`cat ../secrets/username`);
-    $password = trim(`cat ../secrets/password`);
+    $username = trim(`type ..\secrets\username`);
+    $password = trim(`type ..\secrets\password`);
     $db = 'users';
     $conn = new mysqli($servername, $username, $password, $db);
 

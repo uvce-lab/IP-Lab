@@ -1,6 +1,6 @@
 <?php
     $title = "Visit Count";
-    $file = "/tmp/ip-lab_2b_count";
+    $file = `%temp%`."/ip-lab_2b_count";
 
     $count = 1;
 

@@ -12,7 +12,7 @@
     $db = 'users';
     $conn = new mysqli($servername, $username, $password, $db);
 
-    if ($conn->connect_error) echo "Connection failed: " . $conn->connect_error;
+    if ($conn->connect_error) die ("Connection failed: " . $conn->connect_error);
     else
     {
         $sql = 'SELECT * FROM `user`';

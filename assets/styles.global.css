@@ -1,6 +1,8 @@
 h1,
 td,
 th,
-div {
+div,
+input,
+label {
     font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

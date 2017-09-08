@@ -6,9 +6,18 @@ class User
 
     function User($row)
     {
-        $this->Id = $row['id'];
-        $this->UserName = $row['username'];
-        $this->Age = $row['age'];
+        $argsCount = func_num_args();
+        if($argsCount == 1)
+        {
+            $this->Id = $row['id'];
+            $this->UserName = $row['username'];
+            $this->Age = $row['age'];
+        }
+        else
+        {
+            $this->UserName = func_get_arg(0);
+            $this->Age = func_get_arg(1);
+        }
     }
 
     function ToString()

@@ -3,7 +3,7 @@
 
     $title = 'Retrieve Data from Db';
 
-    //Create with files with username and password
+    //Create two files to store username and password in the '5' directory
     //echo "your-mysql-username" > username
     //echo "your-mysql-password" > password
     $servername = 'localhost';

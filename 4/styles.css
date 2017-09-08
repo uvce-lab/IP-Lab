@@ -1,16 +1,12 @@
-div
-{
-    font-family: 'Lato','Segoe UI', Tahoma, Verdana, sans-serif;
+div {
     text-align: center;
 }
 
-.clock-time
-{
-    font-size: 8em;   
+.clock-time {
+    font-size: 8em;
     padding-top: 64px;
 }
 
-.clock-date
-{
+.clock-date {
     font-size: 2.5em;
 }

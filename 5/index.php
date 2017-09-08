@@ -32,6 +32,7 @@
 <html>
     <head>
         <title><?php echo $title?></title>
+        <link rel='stylesheet' href="/ip-lab/assets/styles.global.css">
         <link rel='stylesheet' href='/ip-lab/5/styles.css'>
     </head>
     <body>

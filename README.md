@@ -16,7 +16,7 @@ Navigate to `localhost/ip-lab` to view the files
 
 ## Install Instructions for Windows (with XAMPP)
 
-Install Xampp to its default location (C:\xampp)
+Install Xampp to its default location (`C:\xampp`)
 
 Delete contents of `C:\xampp\htdocs\`
 

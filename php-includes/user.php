@@ -13,6 +13,14 @@ class User
 
     function ToString()
     { return "$Id: $UserName, $Age"; }    
+
+    static function parseSqlUserRows($sqlResult)
+    {
+        $users = new ArrayObject();
+        foreach ($sqlResult as $row)
+            $users->append(new User($row));
+        return $users;
+    }
 }
 
 ?>

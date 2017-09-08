@@ -3,12 +3,12 @@
 
     $title = 'Retrieve Data from Db';
 
-    //Create two files to store username and password in the '5' directory
+    //Create two files to store username and password in the 'secrets' directory
     //echo "your-mysql-username" > username
     //echo "your-mysql-password" > password
     $servername = 'localhost';
-    $username = trim(`cat username`);
-    $password = trim(`cat password`);
+    $username = trim(`cat ../secrets/username`);
+    $password = trim(`cat ../secrets/password`);
     $db = 'users';
     $conn = new mysqli($servername, $username, $password, $db);
 
@@ -18,13 +18,7 @@
         $sql = 'SELECT * FROM `user`';
         $rows = $conn->query($sql);
         //users will hold all the users from the result of the query
-        $users = new ArrayObject();
-        
-        foreach ($rows as $row)
-        {
-            $user = new User($row);
-            $users->append($user);
-        }
+        $users = User::parseSqlUserRows($rows);
     }
 ?>
 

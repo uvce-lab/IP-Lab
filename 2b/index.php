@@ -31,5 +31,14 @@
             if ($count == 1) { echo "<h2>You are our first visitor.</h2>"; }
             else { echo "<h2>You are visitor number $count.</h2>"; }
         ?>
+        <?php
+            if($count != 1)
+            {        
+                echo "
+                    <form action='/ip-lab/2b/clearFile.php' method='post'>
+                        <button>Clear</button>
+                    </form>";
+            }
+        ?>
     </body>
 </html>

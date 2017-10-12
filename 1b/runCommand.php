@@ -1,6 +1,6 @@
 <?php
     $data = $_REQUEST["command"];
-    $title = "Run a UNIX Command";
+    $title = "Run a PowerShell Command";
 
     if (strcmp(exec('PowerShell -Command "Get-Command '.$data.' -ErrorAction SilentlyContinue'), "") == 0)
     {

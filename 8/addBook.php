@@ -16,10 +16,10 @@
         intval(trim($_REQUEST['ed'])),
         $_REQUEST['pub']);
     
-    $servername = 'localhost';
+    $server = trim(`cat ../secrets/server`);
     $username = trim(`cat ../secrets/username`);
     $password = trim(`cat ../secrets/password`);
-    $conn = new mysqli($servername, $username, $password, 'books');
+    $conn = new mysqli($server, $username, $password, 'books');
 
     if($conn->connect_error) die("Connection error: ". $conn->connect_error);
     else 

@@ -11,11 +11,11 @@
 
     $user = new User($_REQUEST['userName'], $_REQUEST['age']);
     
-    $servername = 'localhost';
+    $server = trim(`cat ../secrets/server`);
     $username = trim(`cat ../secrets/username`);
     $password = trim(`cat ../secrets/password`);
     $db = 'users';
-    $conn = new mysqli($servername, $username, $password, $db);
+    $conn = new mysqli($server, $username, $password, $db);
 
     if($conn->connect_error) die("Connection error: ". $conn->connect_error);
     else 

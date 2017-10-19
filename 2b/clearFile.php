@@ -5,6 +5,6 @@
         unlink($file);
     }
 
-    header("Location: http://localhost/ip-lab/2b/index.php");
+    header("Location: http://$_SERVER[SERVER_NAME]/ip-lab/2b/index.php");
     die();
 ?>

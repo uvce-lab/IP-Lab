@@ -1,0 +1,6 @@
+.dockerignore
+dockerfile
+.git*
+db-files/
+LICENSE
+**/README.md

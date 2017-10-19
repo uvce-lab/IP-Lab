@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html>
-</head>
+<head>
     <title><?php echo $title?></title>
     <link rel='stylesheet' href="/ip-lab/assets/styles.global.css">
     <link rel='stylesheet' href="/ip-lab/4/styles.css">
